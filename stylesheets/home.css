@@ -1,0 +1,93 @@
+.btn-speak {
+    -webkit-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+            transform: translateY(-100px);
+}
+
+.btn-vendor {
+    -webkit-transform: translateY(150px);
+        -ms-transform: translateY(150px);
+            transform: translateY(150px);
+}
+
+.img-2 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#333));
+    background: -webkit-linear-gradient(#333, #333);
+    background: -o-linear-gradient(#333, #333);
+    background: linear-gradient(#333, #333);
+}
+
+.img-2 img {
+    opacity: .4;
+}
+
+div.what-is-feria {
+    background-color: #991f00;
+}
+div.what-is-feria img {
+    opacity: .4;
+    height: 900px;
+}
+
+.what-is-feria-text {
+    -webkit-transform: translateY(-35vh);
+        -ms-transform: translateY(-35vh);
+            transform: translateY(-35vh);
+}
+
+.what-is-feria-text p {
+    font-size: 1.5em;
+    padding-bottom: 20px;
+}
+
+.quote {
+    font-size: 1.5em;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e74c3c), to(#333));
+    background: -webkit-linear-gradient(#e74c3c, #333);
+    background: -o-linear-gradient(#e74c3c, #333);
+    background: linear-gradient(#e74c3c, #333);
+}
+
+.upcoming-events {
+    font-size: 1.5em;
+    background-color: #333;
+    height: 700px;
+}
+
+.upcoming-events ul {
+    list-style: none;
+}
+
+.upcoming-events button {
+    -webkit-transform: translateX(18px);
+        -ms-transform: translateX(18px);
+            transform: translateX(18px);
+}
+
+.event {
+    color: #e74c3c;
+}
+
+.date {
+    margin-bottom: 30px;
+}
+
+.donors {
+    height: 500px;
+    color: #333;
+}
+
+.donors img {
+    max-height: 300px;
+    min-height: 250px;
+    max-width: 650px;
+}
+
+.display-1 {
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.display-3 {
+    margin-bottom: 25px;
+}

@@ -1,0 +1,13 @@
+.dev {
+    height: 100px;
+    max-height: 200px;
+    color:#333;
+}
+
+.gif {
+    width: 100%;
+    height: 0;
+    padding-bottom: 25%;
+    position: relative;
+    padding-top: 100px;
+}

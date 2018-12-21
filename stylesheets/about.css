@@ -1,0 +1,62 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    height: 5px;
+    width: 100%;
+}
+
+@media (min-width: 500px) {
+    .mission-vision { font-size: 1rem; }
+    .height-300 { height: 28rem}
+    .team-img { height: 18rem}
+}
+@media (min-width: 768px) {
+    .mission-vision { font-size: 1rem; }
+    .height-300 { height: 22rem}
+    .team-img { height: 22rem}
+}
+@media (min-width: 992px) {
+    .mission-vision { font-size: 1.2rem; }
+    .height-300 { height: 20rem}
+    .team-img { height: 20rem}
+}
+@media (min-width: 1200px) {
+    .mission-vision { font-size: 1.2rem; }
+    .height-300 { height: 20rem}
+    .team-img { height: 20rem}
+}
+
+.carousel-caption {
+    color: #333;
+    text-align: left;
+}
+
+.mission-vision h1{
+    border-left: solid 5px #e74c3c;
+}
+
+.display-3 {
+    padding-left: 15px;
+}
+
+.team {
+    padding-left: 0px;
+    text-align: center;
+    background-color: #e74c3c;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.img-thumbnail {
+    width: 200px;
+    height: 200px;
+}
+
+.titles {
+    list-style: none;
+    font-size: 14px;
+    padding: 0px;
+}
