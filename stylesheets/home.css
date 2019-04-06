@@ -1,3 +1,72 @@
+@media only screen and (max-width: 1204px)
+{
+  .big
+    {
+        font-size:2.5em;
+    }
+    
+    .small {
+        font-size:1.5em;
+    }
+}
+@media only screen and (max-width: 768px)
+{
+    .big
+    {
+        font-size:2em;
+    }
+    
+    .small {
+        font-size:1.5em;
+    }
+    .img-1 {
+      height: 400px;
+    }
+}
+@media only screen and (max-width: 703px)
+{
+    .big
+    {
+        font-size:2em;
+    }
+    
+    .small {
+        font-size:1.5em;
+    }
+    .img-1 {
+      height: 400px;
+    }
+}
+@media only screen and (max-width: 414px)
+{
+    .big
+    {
+        font-size:1.75em;
+    }
+    
+    .small {
+        font-size:1.25em;
+    }
+    
+    .img-1 {
+      height: 300px;
+    }
+}
+@media only screen and (max-width: 320px)
+{
+  .big
+  {
+    font-size:1.5em;
+  }
+  .small
+  {
+      font-size:1em;
+  }
+  .img-1 {
+      height: 300px;
+  }
+}
+
 .btn-speak {
     -webkit-transform: translateY(-100px);
         -ms-transform: translateY(-100px);
@@ -29,19 +98,18 @@ div.what-is-feria img {
     height: 900px;
 }
 
-.what-is-feria-text {
-    -webkit-transform: translateY(-35vh);
-        -ms-transform: translateY(-35vh);
-            transform: translateY(-35vh);
-}
+/*.what-is-feria-text {*/
+/*    -webkit-transform: translateY(-35vh);*/
+/*        -ms-transform: translateY(-35vh);*/
+/*            transform: translateY(-35vh);*/
+/*}*/
 
 .what-is-feria-text p {
-    font-size: 1.5em;
     padding-bottom: 20px;
 }
 
 .quote {
-    font-size: 1.5em;
+    /*font-size: 1.5em;*/
     background: -webkit-gradient(linear, left top, left bottom, from(#e74c3c), to(#333));
     background: -webkit-linear-gradient(#e74c3c, #333);
     background: -o-linear-gradient(#e74c3c, #333);
@@ -49,7 +117,7 @@ div.what-is-feria img {
 }
 
 .upcoming-events {
-    font-size: 1.5em;
+    /*font-size: 1.5em;*/
     background-color: #333;
     height: 700px;
 }
@@ -81,13 +149,4 @@ div.what-is-feria img {
     max-height: 300px;
     min-height: 250px;
     max-width: 650px;
-}
-
-.display-1 {
-    font-weight: 700;
-    letter-spacing: 5px;
-}
-
-.display-3 {
-    margin-bottom: 25px;
 }
