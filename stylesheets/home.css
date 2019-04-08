@@ -1,4 +1,12 @@
-@media only screen and (max-width: 1204px){
+@media only screen and (max-width: 1920px){
+    .big {font-size:3.5em;}
+    .small {font-size:2.5em;}
+}
+@media only screen and (max-width: 1824px){
+    .big {font-size:3em;}
+    .small {font-size:2em;}
+}
+@media only screen and (max-width: 1224px){
     .big {font-size:2.5em;}
     .small {font-size:1.5em;}
 }
