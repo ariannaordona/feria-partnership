@@ -5,6 +5,7 @@
     .height-big {height:530px;}
     .height-small {max-height:265px;}
     .quote-text {font-size:3.5em;}
+    .upcoming-events {height: 400px;}
 }
 @media only screen and (max-width: 1824px){
     .big {font-size:3em;}
@@ -45,6 +46,12 @@
     .donors img {min-height: 100px;}
     .quote-text {font-size:.8em;}
 }
+ul,li { list-style-type: none;
+        list-style-position:inside;
+        margin:0;
+        padding: 0;
+        padding-bottom: 10px;
+}
 .btn-speak {
     -webkit-transform: translateY(-100px);
         -ms-transform: translateY(-100px);
@@ -76,20 +83,7 @@ div.what-is-feria img {
 }
 .upcoming-events {
     background-color: #333;
-    height: 700px;
-}
-.upcoming-events ul {list-style: none;}
-
-.upcoming-events button {
-    -webkit-transform: translateX(18px);
-        -ms-transform: translateX(18px);
-            transform: translateX(18px);
 }
 .event {color: #e74c3c;}
 .date {margin-bottom: 30px;}
 .donors {color: #333;}
-/*.donors img {*/
-/*    max-height: 300px;*/
-/*    min-height: 250px;*/
-/*    max-width: 650px;*/
-/*}*/
