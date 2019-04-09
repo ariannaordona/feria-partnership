@@ -1,32 +1,19 @@
 @media only screen and (max-width: 1920px){
-    .big {font-size:3.5em;}
-    .small {font-size:2.5em;}
-    .width {width: 100%;}
-    .height-big {height:530px;}
-    .height-small {max-height:265px;}
     .quote-text {font-size:3.5em;}
     .upcoming-events {height: 400px;}
 }
 @media only screen and (max-width: 1824px){
-    .big {font-size:3em;}
-    .small {font-size:2em;}
     .quote-text {font-size:3em;}
 }
 @media only screen and (max-width: 1224px){
-    .big {font-size:2.5em;}
-    .small {font-size:1.5em;}
     .quote-text {font-size:2.5em;}
 }
 @media only screen and (max-width: 768px){
-    .big {font-size:2em;}
-    .small {font-size:1.5em;}
     .img-1 {height: 400px;}
     .height-big {height:400px;}
     .quote-text {font-size:1.5em;}
 }
 @media only screen and (max-width: 414px) {
-    .big {font-size:1.75em;}
-    .small {font-size:1.25em;}
     .img-1 {height: 300px;}
     .quote-text {font-size:1.25em;}
 }
@@ -34,23 +21,13 @@
     .btn {font-size:1rem;line-height:1;}
 }
 @media only screen and (max-width: 360px) {
-    .big {font-size:1.2em;}
     .img-1 {height: 300px;}
-    .height-big {height:300px;}
     .quote-text {font-size:1em;}
 }
 @media only screen and (max-width: 320px) {
-    .big {font-size:1.5em;}
-    .small {font-size:1em;}
     .img-1 {height: 300px;}
     .donors img {min-height: 100px;}
     .quote-text {font-size:.8em;}
-}
-ul,li { list-style-type: none;
-        list-style-position:inside;
-        margin:0;
-        padding: 0;
-        padding-bottom: 10px;
 }
 .btn-speak {
     -webkit-transform: translateY(-100px);
@@ -81,9 +58,7 @@ div.what-is-feria img {
     background: -o-linear-gradient(#e74c3c, #333);
     background: linear-gradient(#e74c3c, #333);
 }
-.upcoming-events {
-    background-color: #333;
-}
+.upcoming-events {background-color: #333;}
 .event {color: #e74c3c;}
 .date {margin-bottom: 30px;}
 .donors {color: #333;}
