@@ -28,8 +28,8 @@ sgMail.send(msg);
 //====================================
 
 app.get('/', function(req, res){res.redirect('/home');});
-app.get('/home', function(req, res){res.render('home');});
-app.get('/home-spanish', function(req, res){res.render('home-spanish');});
+app.get('/home', function(req, res){res.render('home', {spanish:false});});
+app.get('/home-spanish', function(req, res){res.render('home', {spanish:true});});
 // app.get('/about', function(req, res){res.render('about');});
 // app.get('/about-spanish', function(req, res) {res.render('about-spanish');});
 // app.get('/events', function(req, res){res.render('events');});
