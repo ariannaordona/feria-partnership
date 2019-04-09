@@ -2,29 +2,48 @@
     .big {font-size:3.5em;}
     .small {font-size:2.5em;}
     .width {width: 100%;}
+    .height-big {height:530px;}
+    .height-small {max-height:265px;}
+    .quote-text {font-size:3.5em;}
 }
 @media only screen and (max-width: 1824px){
     .big {font-size:3em;}
     .small {font-size:2em;}
+    .quote-text {font-size:3em;}
 }
 @media only screen and (max-width: 1224px){
     .big {font-size:2.5em;}
     .small {font-size:1.5em;}
+    .quote-text {font-size:2.5em;}
 }
 @media only screen and (max-width: 768px){
     .big {font-size:2em;}
     .small {font-size:1.5em;}
     .img-1 {height: 400px;}
+    .height-big {height:400px;}
+    .quote-text {font-size:1.5em;}
 }
 @media only screen and (max-width: 414px) {
     .big {font-size:1.75em;}
     .small {font-size:1.25em;}
     .img-1 {height: 300px;}
+    .quote-text {font-size:1.25em;}
+}
+@media only screen and (max-width: 375px) {
+    .btn {font-size:1rem;line-height:1;}
+}
+@media only screen and (max-width: 360px) {
+    .big {font-size:1.2em;}
+    .img-1 {height: 300px;}
+    .height-big {height:300px;}
+    .quote-text {font-size:1em;}
 }
 @media only screen and (max-width: 320px) {
     .big {font-size:1.5em;}
     .small {font-size:1em;}
     .img-1 {height: 300px;}
+    .donors img {min-height: 100px;}
+    .quote-text {font-size:.8em;}
 }
 .btn-speak {
     -webkit-transform: translateY(-100px);
@@ -68,12 +87,9 @@ div.what-is-feria img {
 }
 .event {color: #e74c3c;}
 .date {margin-bottom: 30px;}
-.donors {
-    height: 500px;
-    color: #333;
-}
-.donors img {
-    max-height: 300px;
-    min-height: 250px;
-    max-width: 650px;
-}
+.donors {color: #333;}
+/*.donors img {*/
+/*    max-height: 300px;*/
+/*    min-height: 250px;*/
+/*    max-width: 650px;*/
+/*}*/

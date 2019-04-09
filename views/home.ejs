@@ -8,7 +8,7 @@
     <div class='container-fluid no-padding top'>
         <div class='row no-gutters'>
             <div class='item col-sm-12 col-md-8 width'>
-                <img src='/images/home/crowd.jpg' class='img-fluid width height-530 img-1' alt=''>
+                <img src='/images/home/crowd.jpg' class='img-fluid width height-big img-1' alt=''>
                 <div class='carousel-caption'>
                     <a href='#events'><button type='button' class='btn btn-lg'>
                         <% if(spanish){ %>
@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class='item col-sm-12 col-md-4 width img-2'>
-                <img src='/images/home/jose.jpg' class='img-fluid width h-100 height-265' alt=''>
+                <img src='/images/home/jose.jpg' class='img-fluid width h-100 height-small' alt=''>
                 <div class='carousel-caption'>
                     <a href='/speak'><button type='button' class='btn btn-lg btn-speak'>
                         <% if(spanish){ %>
@@ -30,7 +30,7 @@
                         <% } %>
                         </button></a>
                 </div>
-                <img src='/images/home/vendor.jpg' class='img-fluid width h-100 height-265' alt=''>
+                <img src='/images/home/vendor.jpg' class='img-fluid width h-100 height-small' alt=''>
                 <div class='carousel-caption'>
                     <a href='/vendor'><button type='button' class='btn btn-lg btn-vendor'>
                         <% if(spanish){ %>
@@ -80,16 +80,16 @@
     <div class='container-fluid no-padding'>
         <div class='row no-gutters'>
             <div class='item col-12 width'>
-                <img src='/images/home/keynote.jpg' class='img-fluid width height-530' alt=''>
+                <img src='/images/home/keynote.jpg' class='img-fluid width height-big' alt=''>
             </div>
         </div>
     </div>
     
     <div class='container-fluid no-padding'>
         <div class='row no-gutters quote'>
-            <div class='item col-12 width height-530'>
-                <div class='carousel-caption quote-text'>
-                    <p class='big'>
+            <div class='item col-12 width height-big'>
+                <div class='carousel-caption'>
+                    <p class='quote-text'>
                         <% if(spanish){ %>
                             "Doy las gracias por las conferencia. Son una gran ayuda para nuestros hijos puedan ser mejor ser humanos de desarrollo, valores aprendizaje y cuidados. Gracias. Dios los Bendice."</p>
                         <% }else{ %>
@@ -119,19 +119,36 @@
                     <hr>
                     <ul class='small'>
                         <li>
-                            <a href='/docs/IEP-record-keeping-flyer.pdf' target='_blank'><span class='event'>IEP Record Keeping Workshop</span></a>
-                            <p class='date'>Mon, Jan 14, 2019, 6:00 PM at Bonita-Sunnyside Branch Library Conference Room</p>
+                            <a href='/events/feria-5'><span class='event'>5th Annual FERIA Partnership Conference</span></a>
+                            <p class='date'>Sat, Nov 9, 2019, 8 AM - 3:30 PM (PST)</p>
                         </li>
-                        <li>
-                            <a href='/docs/applebee-fundraiser-flyer-english.pdf' target='_blank'><span class='event'>Applebee's Breakfast Fundraiser</span></a>
-                            <p class='date'>Wed, Jan 26, 2019, 8:00 AM at Plaza Bonita Applebee's</p>
-                        </li>
-                        <li>
-                            <a href='#'><span class='event'>5th Annual FERIA Partnership</span></a>
-                            <p class='date'>November 2019</p>
-                        </li>
+                        <!--<li>-->
+                        <!--    <a href='/docs/IEP-record-keeping-flyer.pdf' target='_blank'><span class='event'>IEP Record Keeping Workshop</span></a>-->
+                        <!--    <p class='date'>Mon, Jan 14, 2019, 6:00 PM at Bonita-Sunnyside Branch Library Conference Room</p>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                        <!--    <a href='/docs/applebee-fundraiser-flyer-english.pdf' target='_blank'><span class='event'>Applebee's Breakfast Fundraiser</span></a>-->
+                        <!--    <p class='date'>Wed, Jan 26, 2019, 8:00 AM at Plaza Bonita Applebee's</p>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                        <!--    <a href='#'><span class='event'>5th Annual FERIA Partnership</span></a>-->
+                        <!--    <p class='date'>November 2019</p>-->
+                        <!--</li>-->
                     </ul>
-                    <a href='/events'><button type='button' class='btn btn-lg'>View past events</button></a>
+                    <a href='/events/feria-5'><button type='button' class='btn btn-lg'>
+                        <% if(spanish){ %>
+                            registro
+                        <% }else{ %>
+                            Register
+                        <% } %>
+                    </button></a>
+                    <a href='/events'><button type='button' class='btn btn-lg'>
+                        <% if(spanish){ %>
+                            Ver eventos pasados
+                        <% }else{ %>
+                        View past events
+                        <% } %>
+                    </button></a>
                 </div>
             </div>
         </div>
@@ -139,7 +156,7 @@
     
     <div class='container-fluid no-padding'>
         <div class='row no-gutters'>
-            <div class='item col-12 width height-530'>
+            <div class='item col-12 width height-big'>
                 <div class='carousel-caption donors'>
                     <p class='big'>
                         <% if(spanish){ %>
