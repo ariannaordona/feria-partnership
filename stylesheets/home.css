@@ -1,6 +1,7 @@
 @media only screen and (max-width: 1920px){
     .quote-text {font-size:3.5em;}
     .upcoming-events {height: 400px;}
+    .donors img {max-height: 300px; max-width: 600px}
 }
 @media only screen and (max-width: 1824px){
     .quote-text {font-size:3em;}
