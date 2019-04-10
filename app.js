@@ -32,8 +32,10 @@ app.get('/home', function(req, res){res.render('home', {spanish:false});});
 app.get('/home-spanish', function(req, res){res.render('home', {spanish:true});});
 // app.get('/about', function(req, res){res.render('about');});
 // app.get('/about-spanish', function(req, res) {res.render('about-spanish');});
-app.get('/events', function(req, res){res.render('events');});
-// app.get('/events-spanish', function(req, res){res.render('events-spanish');});
+app.get('/events', function(req, res){res.render('events', {spanish:false});});
+app.get('/events-spanish', function(req, res){res.render('events', {spanish:true});});
+app.get('/events/feria-5', function(req, res){res.render('feria-5', {spanish:false})})
+app.get('/events/feria-5-spanish', function(req, res){res.render('feria-5', {spanish:true})})
 
 //====================================
 // IMAGE ROUTES
@@ -71,6 +73,7 @@ app.get('/images/FERIA-conference/4/img0005.jpg', function(req, res, next){res.s
 app.get('/images/FERIA-conference/3/img0001.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/FERIA-conference/3/', 'img0001.jpg'));});
 app.get('/images/FERIA-conference/3/img0002.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/FERIA-conference/3/', 'img0002.jpg'));});
 app.get('/images/FERIA-conference/3/img0003.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/FERIA-conference/3/', 'img0003.jpg'));});
+app.get('/images/graphics/feria-frame.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/graphics', 'feria-frame.jpg'));});
 
 //====================================
 // DOCS ROUTES
@@ -79,10 +82,10 @@ app.get('/images/FERIA-conference/3/img0003.jpg', function(req, res, next){res.s
 // app.get('/docs/IEP-record-keeping-flyer.pdf', function(req, res, next){res.sendFile(path.join(__dirname, 'docs/', 'IEP-record-keeping-flyer.pdf'));});
 // app.get('/docs/applebee-fundraiser-flyer-english.pdf', function(req, res, next){res.sendFile(path.join(__dirname, 'docs/', 'applebee-fundraiser-flyer-english.pdf'));});
 // app.get('/docs/applebee-fundraiser-flyer-spanish.pdf', function(req, res, next){res.sendFile(path.join(__dirname, 'docs/', 'applebee-fundraiser-flyer-spanish.pdf'));});
-// app.get('/docs/FERIA-conference/1st-program.pdf', function(req, res) {res.sendFile(path.join(__dirname, 'docs/FERIA-conference', '1st-program.pdf'));});
-// app.get('/docs/FERIA-conference/2nd-program.pdf', function(req, res) {res.sendFile(path.join(__dirname, 'docs/FERIA-conference', '2nd-program.pdf'));});
-// app.get('/docs/FERIA-conference/3rd-program.pdf', function(req, res) {res.sendFile(path.join(__dirname, 'docs/FERIA-conference', '3rd-program.pdf'));});
-// app.get('/docs/FERIA-conference/4th-program.pdf', function(req, res) {res.sendFile(path.join(__dirname, 'docs/FERIA-conference', '4th-program.pdf'));});
+app.get('/docs/FERIA-conference/1st-program.pdf', function(req, res) {res.sendFile(path.join(__dirname, 'docs/FERIA-conference', '1st-program.pdf'));});
+app.get('/docs/FERIA-conference/2nd-program.pdf', function(req, res) {res.sendFile(path.join(__dirname, 'docs/FERIA-conference', '2nd-program.pdf'));});
+app.get('/docs/FERIA-conference/3rd-program.pdf', function(req, res) {res.sendFile(path.join(__dirname, 'docs/FERIA-conference', '3rd-program.pdf'));});
+app.get('/docs/FERIA-conference/4th-program.pdf', function(req, res) {res.sendFile(path.join(__dirname, 'docs/FERIA-conference', '4th-program.pdf'));});
 
 //====================================
 // STYLESHEETS ROUTES
@@ -93,6 +96,7 @@ app.get('/stylesheets/home.css', function(req, res, next){res.sendFile(path.join
 // app.get('/stylesheets/about.css', function(req, res, next){res.sendFile(path.join(__dirname, 'stylesheets', 'about.css'));});
 app.get('/stylesheets/development.css', function(req, res, next){res.sendFile(path.join(__dirname, 'stylesheets', 'development.css'));});
 app.get('/stylesheets/events.css', function(req, res, next){res.sendFile(path.join(__dirname, 'stylesheets', 'events.css'));});
+app.get('/stylesheets/conferences.css', function(req, res, next){res.sendFile(path.join(__dirname, 'stylesheets', 'conferences.css'));});
 
 app.get('*', function(req, res){res.render('development');});
 

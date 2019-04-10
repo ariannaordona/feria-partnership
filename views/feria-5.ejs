@@ -1,0 +1,111 @@
+<% if(spanish){ %>
+    <% include partials/header-spanish %>
+<% }else{ %>
+    <% include partials/header %>
+<% } %>
+<link rel='stylesheet' href='/stylesheets/conferences.css'>
+    <div class='container-fluid no-padding'>
+        <div class='row no-gutters'>
+            <div class='item col-12 width conference'>
+                <div class='carousel-caption'>
+                    <% if(spanish){ %>
+                        <p class='big'>5th Conferencia Anual FERIA Asociación</p>
+                        <hr>
+                        <div class='small'>
+                            <p class='date'>Sábado, 9 de noviembre, 2019, 8:00 AM - 3:30 PM (PST)</p>
+                            <table class='table'>
+                                <thead>
+                                    <tr>
+                                        <th scope='col'>Hora</th>
+                                        <th scope='col'>Actividad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>8:00 - 9:00 AM</td>
+                                        <td>Registro, FERIA de patrocinadores y desayuno continental</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8:30 - 9:00 AM</td>
+                                        <td>Entretenimiento</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9:00 - 10:00 AM</td>
+                                        <td>Sesión general</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:45 - 12:50 PM</td>
+                                        <td>Taller sesión I</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12:00 - 12:50 PM</td>
+                                        <td>Almuerzo, entretenimiento musical-feria de patrocinadores</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1:00 - 2:15 PM</td>
+                                        <td>Taller sesión II</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2:30 - 3:30 PM</td>
+                                        <td>Clausura, comentarios / rifa</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    <% }else{ %>
+                        <p class='big'>5th Annual FERIA Partnership Conference</p>
+                        <hr>
+                        <div class='small'>
+                            <p class='date'>Sat, Nov 9, 2019, 8 AM - 3:30 PM (PST)</p>
+                            <table class='table'>
+                                <thead>
+                                    <tr>
+                                        <th scope='col'>Time</th>
+                                        <th scope='col'>Activity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>8:00 - 9:00 AM</td>
+                                        <td>Sign-in, Resource Fair & Continental Breakfast</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8:30 - 9:00 AM</td>
+                                        <td>Entertainment</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9:00 - 10:00 AM</td>
+                                        <td>General Session</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:45 - 12:50 PM</td>
+                                        <td>Workshop Session I</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12:00 - 12:50 PM</td>
+                                        <td>Lunch, Entertainment, & Resource Fair</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1:00 - 2:15 PM</td>
+                                        <td>Workshop Session II</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2:30 - 3:30 PM</td>
+                                        <td>Closing Remarks/Raffle</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    <% } %>
+                    <div class="embed-responsive embed-responsive-21by9 top">
+                        <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/ABUYlotv1iw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% if(spanish){ %>
+    <% include partials/footer-spanish %>
+<% }else{ %>
+    <% include partials/footer %>
+<% } %>

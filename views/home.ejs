@@ -120,33 +120,23 @@
                     <ul class='small'>
                         <li>
                             <a href='/events/feria-5'><span class='event'>5th Annual FERIA Partnership Conference</span></a>
-                            <p class='date'>Sat, Nov 9, 2019, 8 AM - 3:30 PM (PST)</p>
-                            <a href='/events/feria-5'><button type='button' class='btn btn-lg'>
-                                <% if(spanish){ %>
-                                    registro
-                                <% }else{ %>
-                                    Register
-                                <% } %>
+                            <p class='date'>Sat, Nov 9, 2019, 8:00 AM - 3:30 PM (PST)</p>
+                            <% if(spanish){ %>
+                                <a href='/events/feria-5-spanish'><button type='button' class='btn btn-lg'>
+                                registro
+                            <% }else{ %>
+                                <a href='/events/feria-5'><button type='button' class='btn btn-lg'>
+                                Register
+                            <% } %>
                             </button></a>
                         </li>
-                        <!--<li>-->
-                        <!--    <a href='/docs/IEP-record-keeping-flyer.pdf' target='_blank'><span class='event'>IEP Record Keeping Workshop</span></a>-->
-                        <!--    <p class='date'>Mon, Jan 14, 2019, 6:00 PM at Bonita-Sunnyside Branch Library Conference Room</p>-->
-                        <!--</li>-->
-                        <!--<li>-->
-                        <!--    <a href='/docs/applebee-fundraiser-flyer-english.pdf' target='_blank'><span class='event'>Applebee's Breakfast Fundraiser</span></a>-->
-                        <!--    <p class='date'>Wed, Jan 26, 2019, 8:00 AM at Plaza Bonita Applebee's</p>-->
-                        <!--</li>-->
-                        <!--<li>-->
-                        <!--    <a href='#'><span class='event'>5th Annual FERIA Partnership</span></a>-->
-                        <!--    <p class='date'>November 2019</p>-->
-                        <!--</li>-->
                     </ul>
-                    <a href='/events'><button type='button' class='btn btn-lg'>
-                        <% if(spanish){ %>
+                    <% if(spanish){ %>
+                            <a href='/events-spanish'><button type='button' class='btn btn-lg'>
                             Ver eventos pasados
                         <% }else{ %>
-                        View past events
+                            <a href='/events'><button type='button' class='btn btn-lg'>
+                            View past events
                         <% } %>
                     </button></a>
                 </div>

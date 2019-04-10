@@ -1,0 +1,31 @@
+@media only screen and (max-width: 1920px){
+    .conference {background: url('/images/graphics/feria-frame.jpg') 0 -300px no-repeat;}
+}
+@media only screen and (max-width: 1824px){
+    .conference {background: url('/images/graphics/feria-frame.jpg') 0 -300px no-repeat;}
+}
+@media only screen and (max-width: 1224px){
+    .conference {background: url('/images/graphics/feria-frame.jpg') -300px -300px no-repeat;}
+}
+@media only screen and (max-width: 768px){
+    .conference {background: url('/images/graphics/feria-frame.jpg') -500px -300px no-repeat;}
+}
+@media only screen and (max-width: 414px) {
+    .conference {background: url('/images/graphics/feria-frame.jpg') -800px -250px no-repeat;}
+}
+@media only screen and (max-width: 375px) {
+    .conference {background: url('/images/graphics/feria-frame.jpg') -800px -280px no-repeat;}
+}
+@media only screen and (max-width: 360px) {
+    .conference {background: url('/images/graphics/feria-frame.jpg') -800px -300px no-repeat;}
+}
+@media only screen and (max-width: 320px) {
+    .conference {background: url('/images/graphics/feria-frame.jpg') -900px -190px no-repeat;}
+}
+.conference {
+    height: 1800px;
+    background-color:#212749;
+}
+.table > tbody > tr > td {
+     vertical-align: middle;
+}

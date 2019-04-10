@@ -3,12 +3,6 @@
     .events-past { height: 800px;}
     .collage img { height: 200px;}
 }
-@media only screen and (max-width: 1824px){
-    
-}
-@media only screen and (max-width: 1224px){
-    
-}
 @media only screen and (max-width: 768px){
     .events { height: 400px;}
     .events-past {height: 1000px;}
@@ -37,5 +31,5 @@
     background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .events a {
-    color: #ffffcc;
+    color: #e74c3c;
 }
