@@ -74,6 +74,7 @@ app.get('/images/FERIA-conference/3/img0001.jpg', function(req, res, next){res.s
 app.get('/images/FERIA-conference/3/img0002.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/FERIA-conference/3/', 'img0002.jpg'));});
 app.get('/images/FERIA-conference/3/img0003.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/FERIA-conference/3/', 'img0003.jpg'));});
 app.get('/images/graphics/feria-frame.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/graphics', 'feria-frame.jpg'));});
+app.get('/images/graphics/bullet.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/graphics', 'bullet.jpg'));});
 
 //====================================
 // DOCS ROUTES
