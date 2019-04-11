@@ -8,35 +8,76 @@ li:before {
     margin-left: -1.3em;
     width: 1.3em;
 }
-@media only screen and (max-width: 1920px){
-    .conference {background: url('/images/graphics/feria-frame.jpg') 0 -300px no-repeat;}
-}
-@media only screen and (max-width: 1824px){
-    .conference {background: url('/images/graphics/feria-frame.jpg') 0 -300px no-repeat;}
-}
-@media only screen and (max-width: 1224px){
-    .conference {background: url('/images/graphics/feria-frame.jpg') -300px -200px no-repeat;}
-}
-@media only screen and (max-width: 768px){
-    .conference {background: url('/images/graphics/feria-frame.jpg') -500px -150px no-repeat;}
-}
-@media only screen and (max-width: 414px) {
-    .conference {background: url('/images/graphics/feria-frame.jpg') -800px -120px no-repeat;}
-}
-@media only screen and (max-width: 375px) {
-    .conference {background: url('/images/graphics/feria-frame.jpg') -800px -100px no-repeat;}
-}
-@media only screen and (max-width: 360px) {
-    .conference {background: url('/images/graphics/feria-frame.jpg') -800px -50px no-repeat;}
-}
-@media only screen and (max-width: 320px) {
-    .conference {background: url('/images/graphics/feria-frame.jpg') -900px -50px no-repeat;}
-}
+/*@media only screen and (max-width: 1920px){*/
+/*    .conference {background: url('/images/graphics/feria-frame.jpg') 0 -300px no-repeat;}*/
+/*}*/
+/*@media only screen and (max-width: 1824px){*/
+/*    .conference {background: url('/images/graphics/feria-frame.jpg') 0 -300px no-repeat;}*/
+/*}*/
+/*@media only screen and (max-width: 1224px){*/
+/*    .conference {background: url('/images/graphics/feria-frame.jpg') -300px -200px no-repeat;}*/
+/*}*/
+/*@media only screen and (max-width: 768px){*/
+/*    .conference {background: url('/images/graphics/feria-frame.jpg') -500px -150px no-repeat;}*/
+/*}*/
+/*@media only screen and (max-width: 414px) {*/
+/*    .conference {background: url('/images/graphics/feria-frame.jpg') -800px -120px no-repeat;}*/
+/*}*/
+/*@media only screen and (max-width: 375px) {*/
+/*    .conference {background: url('/images/graphics/feria-frame.jpg') -800px -100px no-repeat;}*/
+/*}*/
+/*@media only screen and (max-width: 360px) {*/
+/*    .conference {background: url('/images/graphics/feria-frame.jpg') -800px -50px no-repeat;}*/
+/*}*/
+/*@media only screen and (max-width: 320px) {*/
+/*    .conference {background: url('/images/graphics/feria-frame.jpg') -900px -50px no-repeat;}*/
+/*}*/
 .conference {
-    height: 1800px;
+    height: 3000px;
     background-color:#212749;
+    background: 
+        /* top, transparent black, faked with gradient */ 
+        -webkit-gradient(
+          linear, 
+          left top, left bottom, 
+          from(rgba(0, 0, 0, 0.3)), 
+          to(rgba(0, 0, 0, 0.3))
+        ),
+        /* bottom, image */
+        url('/images/graphics/feria-frame.jpg');
+    background: 
+        /* top, transparent black, faked with gradient */ 
+        -webkit-linear-gradient(
+          rgba(0, 0, 0, 0.3), 
+          rgba(0, 0, 0, 0.3)
+        ),
+        /* bottom, image */
+        url('/images/graphics/feria-frame.jpg');
+    background: 
+        /* top, transparent black, faked with gradient */ 
+        -o-linear-gradient(
+          rgba(0, 0, 0, 0.3), 
+          rgba(0, 0, 0, 0.3)
+        ),
+        /* bottom, image */
+        url('/images/graphics/feria-frame.jpg');
+    background: 
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.3), 
+          rgba(0, 0, 0, 0.3)
+        ),
+        /* bottom, image */
+        url('/images/graphics/feria-frame.jpg');
+    background-size: cover;
 }
 .table > tbody > tr > td {
      vertical-align: middle;
 }
-.card {background-color:#212749}
+.card {background-color:#212749;}
+.carousel-caption {
+    top: 45%;
+}
+.card-body {
+    flex: 1 0 auto;
+}
