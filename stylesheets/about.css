@@ -2,46 +2,53 @@ p {
     margin: 0;
     padding: 0;
 }
-
 hr {
     height: 5px;
     width: 100%;
 }
-
-@media (min-width: 500px) {
-    .mission-vision { font-size: 1rem; }
-    .height-300 { height: 28rem}
-    .team-img { height: 18rem}
+@media only screen and (max-width: 1920px){
+    .height-big {height:50rem;}
 }
-@media (min-width: 768px) {
-    .mission-vision { font-size: 1rem; }
-    .height-300 { height: 22rem}
-    .team-img { height: 22rem}
+@media only screen and (max-width: 1824px){
 }
-@media (min-width: 992px) {
-    .mission-vision { font-size: 1.2rem; }
-    .height-300 { height: 20rem}
-    .team-img { height: 20rem}
+@media only screen and (max-width: 1224px){
+    .height-big {height:40rem;}
 }
-@media (min-width: 1200px) {
-    .mission-vision { font-size: 1.2rem; }
-    .height-300 { height: 20rem}
-    .team-img { height: 20rem}
+@media only screen and (max-width: 768px){
+    .big {font-size:1.75em;}
+    .small {font-size:1em;}
+    .height-big {height:30rem;}
 }
-
+@media only screen and (max-width: 414px) {
+    .big {font-size:1.5em;}
+    .small {font-size:1em;}
+    .height-big {height:35rem;}
+    .video {padding-top: 150px}
+}
+@media only screen and (max-width: 375px) {
+    .height-big {height:38rem;}
+}
+@media only screen and (max-width: 360px) {
+    .height-big {height:40rem;}
+}
+@media only screen and (max-width: 320px) {
+    .big {font-size:1em;}
+    .small {font-size:.8em;}
+    .height-big {height:400px;}
+}
 .carousel-caption {
     color: #333;
     text-align: left;
+    top: 0%;
+    -webkit-transform: translateY(-0%);
+        -ms-transform: translateY(-0%);
+            transform: translateY(-0%);
+    bottom: initial;
 }
-
-.mission-vision h1{
+.big {
     border-left: solid 5px #e74c3c;
-}
-
-.display-3 {
     padding-left: 15px;
 }
-
 .team {
     padding-left: 0px;
     text-align: center;
@@ -49,12 +56,10 @@ hr {
     color: #fff;
     border-radius: 20px;
 }
-
 .img-thumbnail {
     width: 200px;
     height: 200px;
 }
-
 .titles {
     list-style: none;
     font-size: 14px;
