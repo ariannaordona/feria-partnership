@@ -74,10 +74,10 @@ li:before {
 .table > tbody > tr > td {
      vertical-align: middle;
 }
-.card {background-color:#212749;}
+.card {background-color:#171b33;}
 .carousel-caption {
     top: 45%;
 }
-.card-body {
-    flex: 1 0 auto;
+.card-header {
+    text-align:left;
 }

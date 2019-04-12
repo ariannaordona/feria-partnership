@@ -30,12 +30,14 @@ sgMail.send(msg);
 app.get('/', function(req, res){res.redirect('/home');});
 app.get('/home', function(req, res){res.render('home', {spanish:false});});
 app.get('/home-spanish', function(req, res){res.render('home', {spanish:true});});
-// app.get('/about', function(req, res){res.render('about');});
-// app.get('/about-spanish', function(req, res) {res.render('about-spanish');});
+app.get('/about', function(req, res){res.render('about', {spanish:false});});
+app.get('/about-spanish', function(req, res) {res.render('about', {spanish:true});});
 app.get('/events', function(req, res){res.render('events', {spanish:false});});
 app.get('/events-spanish', function(req, res){res.render('events', {spanish:true});});
-app.get('/events/feria-5', function(req, res){res.render('feria-5', {spanish:false})})
-app.get('/events/feria-5-spanish', function(req, res){res.render('feria-5', {spanish:true})})
+app.get('/events/feria-5', function(req, res){res.render('feria-5', {spanish:false})});
+app.get('/events/feria-5-spanish', function(req, res){res.render('feria-5', {spanish:true})});
+app.get('/events/feria-4', function(req, res){res.render('feria-4', {spanish:false})});
+app.get('/events/feria-4-spanish', function(req, res){res.render('feria-4', {spanish:true})});
 
 //====================================
 // IMAGE ROUTES
@@ -64,7 +66,7 @@ app.get('/images/flags/usa.png', function(req, res, next){res.sendFile(path.join
 // app.get('/images/team/carmen.png', function(req, res, next){res.sendFile(path.join(__dirname, 'images/team', 'carmen.png'));});
 // app.get('/images/team/michelle.png', function(req, res, next){res.sendFile(path.join(__dirname, 'images/team', 'michelle.png'));});
 // app.get('/images/team/escobedo.png', function(req, res, next){res.sendFile(path.join(__dirname, 'images/team', 'escobedo.png'));});
-// app.get('/images/team/arianna.png', function(req, res, next){res.sendFile(path.join(__dirname, 'images/team', 'arianna.png'));});
+app.get('/images/team/clarisa-solis.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/team', 'clarisa-solis.jpg'));});
 app.get('/images/FERIA-conference/4/img0001.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/FERIA-conference/4/', 'img0001.jpg'));});
 app.get('/images/FERIA-conference/4/img0002.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/FERIA-conference/4/', 'img0002.jpg'));});
 app.get('/images/FERIA-conference/4/img0003.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/FERIA-conference/4/', 'img0003.jpg'));});
@@ -75,6 +77,7 @@ app.get('/images/FERIA-conference/3/img0002.jpg', function(req, res, next){res.s
 app.get('/images/FERIA-conference/3/img0003.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/FERIA-conference/3/', 'img0003.jpg'));});
 app.get('/images/graphics/feria-frame.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/graphics', 'feria-frame.jpg'));});
 app.get('/images/graphics/bullet.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/graphics', 'bullet.jpg'));});
+app.get('/images/graphics/mountain-frame.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/graphics', 'mountain-frame.jpg'));});
 
 //====================================
 // DOCS ROUTES
@@ -87,6 +90,7 @@ app.get('/docs/FERIA-conference/1st-program.pdf', function(req, res) {res.sendFi
 app.get('/docs/FERIA-conference/2nd-program.pdf', function(req, res) {res.sendFile(path.join(__dirname, 'docs/FERIA-conference', '2nd-program.pdf'));});
 app.get('/docs/FERIA-conference/3rd-program.pdf', function(req, res) {res.sendFile(path.join(__dirname, 'docs/FERIA-conference', '3rd-program.pdf'));});
 app.get('/docs/FERIA-conference/4th-program.pdf', function(req, res) {res.sendFile(path.join(__dirname, 'docs/FERIA-conference', '4th-program.pdf'));});
+app.get('/docs/FERIA-conference/4-eval-sum.pdf', function(req, res) {res.sendFile(path.join(__dirname, 'docs/FERIA-conference', '4-eval-sum.pdf'));});
 
 //====================================
 // STYLESHEETS ROUTES
@@ -94,10 +98,11 @@ app.get('/docs/FERIA-conference/4th-program.pdf', function(req, res) {res.sendFi
 
 app.get('/stylesheets/general.css', function(req, res, next){res.sendFile(path.join(__dirname, 'stylesheets', 'general.css'));});
 app.get('/stylesheets/home.css', function(req, res, next){res.sendFile(path.join(__dirname, 'stylesheets', 'home.css'));});
-// app.get('/stylesheets/about.css', function(req, res, next){res.sendFile(path.join(__dirname, 'stylesheets', 'about.css'));});
+app.get('/stylesheets/about.css', function(req, res, next){res.sendFile(path.join(__dirname, 'stylesheets', 'about.css'));});
 app.get('/stylesheets/development.css', function(req, res, next){res.sendFile(path.join(__dirname, 'stylesheets', 'development.css'));});
 app.get('/stylesheets/events.css', function(req, res, next){res.sendFile(path.join(__dirname, 'stylesheets', 'events.css'));});
-app.get('/stylesheets/conferences.css', function(req, res, next){res.sendFile(path.join(__dirname, 'stylesheets', 'conferences.css'));});
+app.get('/stylesheets/feria-5.css', function(req, res, next){res.sendFile(path.join(__dirname, 'stylesheets', 'feria-5.css'));});
+app.get('/stylesheets/feria-4.css', function(req, res, next){res.sendFile(path.join(__dirname, 'stylesheets', 'feria-4.css'));});
 
 app.get('*', function(req, res){res.render('development');});
 
