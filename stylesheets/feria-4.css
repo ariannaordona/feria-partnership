@@ -57,6 +57,9 @@ li:before {
 .card-header {
     text-align:left;
 }
+.carousel-caption {
+    top: 5%;
+}
 .keynote {
     height: 10em;
 }

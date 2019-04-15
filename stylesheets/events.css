@@ -2,6 +2,7 @@
     .events { height: 300px;}
     .events-past { height: 800px;}
     .collage img { height: 200px;}
+    .carousel-caption {top: 5%;}
 }
 @media only screen and (max-width: 768px){
     .events { height: 400px;}
@@ -10,19 +11,21 @@
 }
 @media only screen and (max-width: 414px) {
     .events {height: 300px;}
-    .events-past {height: 800px;}
+    .events-past {height: 1000px;}
     .collage img { height: 100px;}
 }
 @media only screen and (max-width: 375px) {
     .events {height: 300px;}
-    .events-past {height: 1000px;}
+    .events-past {height: 1200px;}
     .collage img { height: 75px;}
 }
 @media only screen and (max-width: 360px) {
+    .events-past {height: 1200px;}
     .collage img { height: 50px;}
 }
 @media only screen and (max-width: 320px) {
-    .events-past {height: 700px;}
+    .carousel-caption {top: 5%;}
+    .events-past {height: 800px;}
     .collage img { height: 0px;}
 }
 .events {

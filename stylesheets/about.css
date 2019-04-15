@@ -34,16 +34,12 @@ hr {
 @media only screen and (max-width: 320px) {
     .big {font-size:1em;}
     .small {font-size:.8em;}
-    .height-big {height:400px;}
+    .height-big {height:500px;}
 }
 .carousel-caption {
     color: #333;
     text-align: left;
-    top: 0%;
-    -webkit-transform: translateY(-0%);
-        -ms-transform: translateY(-0%);
-            transform: translateY(-0%);
-    bottom: initial;
+    top: 5%;
 }
 .big {
     border-left: solid 5px #e74c3c;
@@ -64,4 +60,10 @@ hr {
     list-style: none;
     font-size: 14px;
     padding: 0px;
+}
+.bottom {
+    padding-bottom: 100px
+}
+.team-img img {
+    border-radius:100px;
 }
