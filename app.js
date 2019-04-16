@@ -30,8 +30,7 @@ app.post('/contact', function(req,res) {
     to: 'ariannaordona@gmail.com',
     from: req.body.email,
     subject: req.body.subject,
-    text: req.body.message,
-    html: '<p><strong>' + req.body.fullName + '</strong></p>',
+    html: req.body.message + '<p><strong>' + req.body.fullName + '</strong></p>',
   };
   sgMail.send(msg);
   res.redirect('/about');
