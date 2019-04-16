@@ -12,17 +12,11 @@ var agent = new http.Agent({
 
 app.set('view engine', 'ejs');
 app.use(serveStatic('FERIA/'));
+app.use(express.urlencoded());
 
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-const msg = {
-  to: 'ariannaordona@gmail.com',
-  from: 'test@example.com',
-  subject: 'Sending with SendGrid is Fun',
-  text: 'and easy to do anywhere, even with Node.js',
-  html: '<strong>and easy to do anywhere, even with Node.js</strong>',
-};
-sgMail.send(msg);
+
 //====================================
 // ROUTES
 //====================================
@@ -32,6 +26,17 @@ app.get('/home', function(req, res){res.render('home', {spanish:false});});
 app.get('/home-spanish', function(req, res){res.render('home', {spanish:true});});
 app.get('/about', function(req, res){res.render('about', {spanish:false});});
 app.get('/about-spanish', function(req, res) {res.render('about', {spanish:true});});
+app.post('/about', function(req,res) {
+  var msg = {
+    to: 'ariannaordona@gmail.com',
+    from: req.body.email,
+    subject: req.body.subject,
+    text: req.body.message,
+    html: '<p><strong>' + req.body.fullName + '</strong></p>',
+  };
+  sgMail.send(msg);
+  res.redirect('/about');
+});
 app.get('/events', function(req, res){res.render('events', {spanish:false});});
 app.get('/events-spanish', function(req, res){res.render('events', {spanish:true});});
 app.get('/events/feria-5', function(req, res){res.render('feria-5', {spanish:false})});
