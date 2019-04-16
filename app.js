@@ -12,10 +12,7 @@ var agent = new http.Agent({
 
 app.set('view engine', 'ejs');
 app.use(serveStatic('FERIA/'));
-app.use(express.urlencoded());
-
-const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+app.use(express.urlencoded({}));
 
 //====================================
 // ROUTES
@@ -26,7 +23,9 @@ app.get('/home', function(req, res){res.render('home', {spanish:false});});
 app.get('/home-spanish', function(req, res){res.render('home', {spanish:true});});
 app.get('/about', function(req, res){res.render('about', {spanish:false});});
 app.get('/about-spanish', function(req, res) {res.render('about', {spanish:true});});
-app.post('/about', function(req,res) {
+app.post('/contact', function(req,res) {
+  const sgMail = require('@sendgrid/mail');
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   var msg = {
     to: 'ariannaordona@gmail.com',
     from: req.body.email,
