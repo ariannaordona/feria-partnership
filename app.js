@@ -43,6 +43,10 @@ app.get('/events/feria-5', function(req, res){res.render('feria-5', {spanish:fal
 app.get('/events/feria-5-spanish', function(req, res){res.render('feria-5', {spanish:true})});
 app.get('/events/feria-4', function(req, res){res.render('feria-4', {spanish:false})});
 app.get('/events/feria-4-spanish', function(req, res){res.render('feria-4', {spanish:true})});
+app.get('/support-groups', function(req,res){res.render('support-groups', {spanish:false})});
+app.get('/support-groups-spanish', function(req,res){res.render('support-groups', {spanish:true})});
+app.get('/questions-and-concerns', function(req,res){res.render('questions-and-concerns', {spanish:false})});
+app.get('/questions-and-concerns-spanish', function(req,res){res.render('questions-and-concerns', {spanish:true})});
 
 //====================================
 // IMAGE ROUTES
@@ -94,6 +98,7 @@ app.get('/stylesheets/home.css', function(req, res, next){res.sendFile(path.join
 app.get('/stylesheets/about.css', function(req, res, next){res.sendFile(path.join(__dirname, 'stylesheets', 'about.css'));});
 app.get('/stylesheets/development.css', function(req, res, next){res.sendFile(path.join(__dirname, 'stylesheets', 'development.css'));});
 app.get('/stylesheets/events.css', function(req, res, next){res.sendFile(path.join(__dirname, 'stylesheets', 'events.css'));});
+app.get('/stylesheets/event-conferences.css', function(req, res, next){res.sendFile(path.join(__dirname, 'stylesheets', 'event-conferences.css'));});
 app.get('/stylesheets/feria-5.css', function(req, res, next){res.sendFile(path.join(__dirname, 'stylesheets', 'feria-5.css'));});
 app.get('/stylesheets/feria-4.css', function(req, res, next){res.sendFile(path.join(__dirname, 'stylesheets', 'feria-4.css'));});
 

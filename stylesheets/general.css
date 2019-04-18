@@ -66,6 +66,7 @@ ul,li { list-style-type: none;
     padding-right: 0;
 }
 .top {padding-top: 100px}
+.bottom {padding-bottom:10px}
 .item {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;

@@ -1,39 +1,5 @@
-li {
-    text-align: left;
-    padding-left: 1.3em;
-}
-li:before {
-    content: url('/images/graphics/bullet.jpg');
-    display:inline-block;
-    margin-left: -1.3em;
-    width: 1.3em;
-}
-/*@media only screen and (max-width: 1920px){*/
-/*    .conference {background: url('/images/graphics/feria-frame.jpg') 0 -300px no-repeat;}*/
-/*}*/
-/*@media only screen and (max-width: 1824px){*/
-/*    .conference {background: url('/images/graphics/feria-frame.jpg') 0 -300px no-repeat;}*/
-/*}*/
-/*@media only screen and (max-width: 1224px){*/
-/*    .conference {background: url('/images/graphics/feria-frame.jpg') -300px -200px no-repeat;}*/
-/*}*/
-/*@media only screen and (max-width: 768px){*/
-/*    .conference {background: url('/images/graphics/feria-frame.jpg') -500px -150px no-repeat;}*/
-/*}*/
-/*@media only screen and (max-width: 414px) {*/
-/*    .conference {background: url('/images/graphics/feria-frame.jpg') -800px -120px no-repeat;}*/
-/*}*/
-/*@media only screen and (max-width: 375px) {*/
-/*    .conference {background: url('/images/graphics/feria-frame.jpg') -800px -100px no-repeat;}*/
-/*}*/
-/*@media only screen and (max-width: 360px) {*/
-/*    .conference {background: url('/images/graphics/feria-frame.jpg') -800px -50px no-repeat;}*/
-/*}*/
-/*@media only screen and (max-width: 320px) {*/
-/*    .conference {background: url('/images/graphics/feria-frame.jpg') -900px -50px no-repeat;}*/
-/*}*/
 .conference {
-    height: 3000px;
+    height: 4000px;
     background-color:#212749;
     background: 
         /* top, transparent black, faked with gradient */ 
@@ -71,13 +37,6 @@ li:before {
         url('/images/graphics/feria-frame.jpg');
     background-size: cover;
 }
-.table > tbody > tr > td {
-     vertical-align: middle;
-}
-.card {background-color:#171b33;}
 .carousel-caption {
     top: 5%;
-}
-.card-header {
-    text-align:left;
 }
