@@ -23,6 +23,8 @@ app.get('/home', function(req, res){res.render('home', {spanish:false});});
 app.get('/home-spanish', function(req, res){res.render('home', {spanish:true});});
 app.get('/about', function(req, res){res.render('about', {spanish:false});});
 app.get('/about-spanish', function(req, res) {res.render('about', {spanish:true});});
+app.get('/contact', function(req,res) {res.render('contact', {spanish:false});});
+app.get('/contact-spanish', function(req,res) {res.render('contact', {spanish:true});});
 app.post('/contact', function(req,res) {
   const sgMail = require('@sendgrid/mail');
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
