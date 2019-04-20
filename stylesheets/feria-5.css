@@ -1,5 +1,28 @@
+@media only screen and (max-width: 1920px){
+    .conference {height: 6000px;}
+}
+@media only screen and (max-width: 1824px){
+    .conference {height: 5000px;}
+}
+@media only screen and (max-width: 1224px){
+    .conference {height: 4000px;}
+}
+@media only screen and (max-width: 768px){
+    .conference {height: 4600px;}
+}
+@media only screen and (max-width: 414px) {
+    .conference {height: 5200px;}
+}
+@media only screen and (max-width: 375px) {
+    .conference {height: 5550px;}
+}
+@media only screen and (max-width: 360px) {
+
+}
+@media only screen and (max-width: 320px) {
+.conference {height: 4550px;}
+}
 .conference {
-    height: 4000px;
     background-color:#212749;
     background: 
         /* top, transparent black, faked with gradient */ 
