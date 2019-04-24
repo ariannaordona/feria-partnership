@@ -9,57 +9,59 @@
     <% include partials/header %>
 <% } %>
 <link rel='stylesheet' href='/stylesheets/about.css'>
-    
-    <div class='container-fluid no-padding top video'>
-        <div class='row no-gutters d-flex justify-content-center align-items-center'>
-            <div class='item col-6'>
-                <div class="embed-responsive embed-responsive-21by9">
-                    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/ABUYlotv1iw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class='box'>
+    <div class='white'>
+        <div class='container-fluid no-padding top video'>
+            <div class='row no-gutters d-flex justify-content-center align-items-center'>
+                <div class='item col-6'>
+                    <div class="embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/ABUYlotv1iw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class='row no-gutters'>
+                <div class='item col-12 w-100 height-big'>
+                    <div class='carousel-caption mission-vision'>
+                        <% if(spanish){ %>
+                            <p class='big'>Estado de la Visión</p>
+                            <div class='small'>
+                                <p>El propósito y visión de FERIA Asociación / Colaboración Conferencia Anual es e empoderar a las familias Latinas ofreciendoles conocimiento para que precisamente lleve apoyó a sus hijos con necesidades especiales desde el momento de su nacimiento hast edad universitaria, y su vida adulta. También asistir con capacitación para alcanzar s potencial máximo atraves de aprendizage en un hogar receptivo cultural y linguísticamente Colaboración de la escuela y la comunidad en el Condado de San Diego, incluyendo escuelas preparatorias, estudiantes de liderazgo /auto abogacía y la rama profesional.</p>
+                                <p><strong>Lema: “Construyendo Padres Latinos y Liderazco Estudiantil”</strong></p>
+                            </div>
+                        <% }else{ %>
+                            <p class='big'>Our Vision</p>
+                            <div class='small'>
+                                <p>The purpose and vision of the FERIA Partnership Annual Conference Collaborative is to empower Latino families and provide them the knowledge to effectively support their children with special needs from cradle to college to adult life as well as to assist them in attaining their optimal learning potential through a culturally and linguistically responsive home, school and community collaborative in San Diego county, including a high school student leadership Academy, self-advocacy and professional strands.</p>
+                                <p><strong>Motto: “We Build Latino Parent and Student Leadership”</strong></p>
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+            <div class='row no-gutters bottom'>
+                <div class='item col-12 w-100 height-big'>
+                    <div class='carousel-caption mission-vision'>
+                        <% if(spanish){ %>
+                            <p class='big'>Estado de la Mision</p>
+                            <p class='small'>La mison del la Conferencia FERIA asociada con el hogar, la escuela y los colaboradores de la comunidad ofrecen un ambiente receptivo receptivo cultural y linguisticamente que cre un ambiente de aprendizaje desarrollado po voces de familias Latinas. Profesionales padres de familia aprenderan sobre programa basados en evidencias, estrategias literaria en casa / escuela, agencias, organizaciones servicio de la comunidad local. Identificar recursos que apoyen el desarrollo social emocional y academico de sus hijos los cuale resultaran en fomentar el exito estudiantil qu prepare a las personas con necesidade especiales a ser miembros de la comunida que contribuyan y sean participantes exitoso no solo en nuestras comunidades locales sin globales.</p>
+                        <% }else{ %>    
+                            <p class='big'>Our Mission</p>
+                            <p class='small'>The mission of the FERIA home, school and community partnership is to provide an inclusive culturally and linguistically responsive conference environment, which creates a learning environment developed by Latino family voices. Professionals and parents will learn about evidence-based programs, home/school language and literacy strategies, agencies and organizations available in the local community. Identify resources that supports the social, emotional and academic development of their children and which will result in fostering student success that prepares individuals with special needs to be contributing members of society and to participate successfully in our local as well as our global community.</p>
+                        <% } %>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class='row no-gutters'>
-            <div class='item col-12 w-100 height-big'>
-                <div class='carousel-caption mission-vision'>
-                    <% if(spanish){ %>
-                        <p class='big'>Estado de la Visión</p>
-                        <div class='small'>
-                            <p>El propósito y visión de FERIA Asociación / Colaboración Conferencia Anual es e empoderar a las familias Latinas ofreciendoles conocimiento para que precisamente lleve apoyó a sus hijos con necesidades especiales desde el momento de su nacimiento hast edad universitaria, y su vida adulta. También asistir con capacitación para alcanzar s potencial máximo atraves de aprendizage en un hogar receptivo cultural y linguísticamente Colaboración de la escuela y la comunidad en el Condado de San Diego, incluyendo escuelas preparatorias, estudiantes de liderazgo /auto abogacía y la rama profesional.</p>
-                            <p><strong>Lema: “Construyendo Padres Latinos y Liderazco Estudiantil”</strong></p>
-                        </div>
-                    <% }else{ %>
-                        <p class='big'>Our Vision</p>
-                        <div class='small'>
-                            <p>The purpose and vision of the FERIA Partnership Annual Conference Collaborative is to empower Latino families and provide them the knowledge to effectively support their children with special needs from cradle to college to adult life as well as to assist them in attaining their optimal learning potential through a culturally and linguistically responsive home, school and community collaborative in San Diego county, including a high school student leadership Academy, self-advocacy and professional strands.</p>
-                            <p><strong>Motto: “We Build Latino Parent and Student Leadership”</strong></p>
-                        </div>
-                    <% } %>
-                </div>
-            </div>
-        </div>
-        <div class='row no-gutters bottom'>
-            <div class='item col-12 w-100 height-big'>
-                <div class='carousel-caption mission-vision'>
-                    <% if(spanish){ %>
-                        <p class='big'>Estado de la Mision</p>
-                        <p class='small'>La mison del la Conferencia FERIA asociada con el hogar, la escuela y los colaboradores de la comunidad ofrecen un ambiente receptivo receptivo cultural y linguisticamente que cre un ambiente de aprendizaje desarrollado po voces de familias Latinas. Profesionales padres de familia aprenderan sobre programa basados en evidencias, estrategias literaria en casa / escuela, agencias, organizaciones servicio de la comunidad local. Identificar recursos que apoyen el desarrollo social emocional y academico de sus hijos los cuale resultaran en fomentar el exito estudiantil qu prepare a las personas con necesidade especiales a ser miembros de la comunida que contribuyan y sean participantes exitoso no solo en nuestras comunidades locales sin globales.</p>
-                    <% }else{ %>    
-                        <p class='big'>Our Mission</p>
-                        <p class='small'>The mission of the FERIA home, school and community partnership is to provide an inclusive culturally and linguistically responsive conference environment, which creates a learning environment developed by Latino family voices. Professionals and parents will learn about evidence-based programs, home/school language and literacy strategies, agencies and organizations available in the local community. Identify resources that supports the social, emotional and academic development of their children and which will result in fostering student success that prepares individuals with special needs to be contributing members of society and to participate successfully in our local as well as our global community.</p>
-                    <% } %>
+        <hr>
+        <div class='container-fluid no-padding'>
+            <div class='row no-gutters d-flex justify-content-center align-items-center'>
+                <div class='item col-10 team-img'>
+                    <img src='/images/team/group-picture.jpg' class='img-fluid w-100' alt=''>
                 </div>
             </div>
         </div>
     </div>
-    <hr>
-    <div class='container-fluid no-padding'>
-        <div class='row no-gutters d-flex justify-content-center align-items-center'>
-            <div class='item col-10 team-img'>
-                <img src='/images/team/group-picture.jpg' class='img-fluid w-100' alt=''>
-            </div>
-        </div>
-    </div>
-    
+</div>
 <% if(spanish){ %>
     <% include partials/footer-spanish %>
 <% }else{ %>

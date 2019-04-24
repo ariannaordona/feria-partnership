@@ -1,13 +1,13 @@
 @media only screen and (max-width: 1920px){
-    .quote-text {font-size:3.5em;}
+    .quote-text {font-size:2em;}
     .upcoming-events {height: 400px;}
     .donors img {max-height: 300px; max-width: 600px}
 }
 @media only screen and (max-width: 1824px){
-    .quote-text {font-size:3em;}
+    /*.quote-text {font-size:2em;}*/
 }
 @media only screen and (max-width: 1224px){
-    .quote-text {font-size:2.5em;}
+    /*.quote-text {font-size:2.5em;}*/
 }
 @media only screen and (max-width: 768px){
     .img-1 {height: 400px;}
@@ -68,4 +68,8 @@ div.what-is-feria img {
 }
 .upcoming-events {background-color: #333;}
 .event {color: #e74c3c;}
-.donors {color: #333;}
+.donors {
+    color: #333;
+    background-color: #fff;
+}
+.top {padding-top: 50px}

@@ -8,120 +8,123 @@
 <% }else{ %>
     <% include partials/header %>
 <% } %>
-<div class='container-fluid no-padding top'>
-    <div class='row no-gutters d-flex justify-content-center align-items-center'>
-        <div class='item col-10'>
-            <div class='big'>
-                <% if(spanish){ %>
-                    Cuéntanos tus pensamientos
-                <% }else{ %>
-                    Tell us your thoughts
-                <% } %>
-            </div>
-            <hr>
-            <form action='/contact' id='contact' method='POST'>
-                <div class="form-row">
-                    <div class="col-md-6 mb-3">
-                        <label for='fullName'>
-                            <% if(spanish){ %>
-                                Nombre completo
-                            <% }else{ %>
-                                Full Name
-                            <% } %>
-                        </label>
-                        <input type="text" class="form-control" name ='fullName' id='fullName' placeholder="Full Name" required>
-                        <div class='invalid-feedback'>
-                            <% if(spanish){ %>
-                                Por favor, escriba su nombre
-                            <% }else{ %>
-                                Please enter your name
-                            <% } %>
-                        </div>
+<div class='box'>
+    <div class='white'>
+        <div class='container-fluid no-padding top'>
+            <div class='row no-gutters d-flex justify-content-center align-items-center'>
+                <div class='item col-10'>
+                    <div class='big'>
+                        <% if(spanish){ %>
+                            Cuéntanos tus pensamientos
+                        <% }else{ %>
+                            Tell us your thoughts
+                        <% } %>
                     </div>
-                    <div class="col-md-4 mb-3">
-                        <label for='email'>
-                            <% if(spanish){ %>
-                                Dirección de correo electrónico
-                            <% }else{ %>
-                                Email Address
-                            <% } %>
-                        </label>
-                        <input type="email" class="form-control" name ='email' id='email' placeholder="Email" required>
-                        <div class='invalid-feedback'>
-                            <% if(spanish){ %>
-                                Por favor proporcione un correo electrónico válido para que podamos contactarlo
-                            <% }else{ %>
-                                Please provide a valid email so we can contact you
-                            <% } %>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="col-md-4 mb-3">
-                        <label for='subject'>
-                            <% if(spanish){ %>
-                                Tema
-                            <% }else{ %>
-                                Subject
-                            <% } %>
-                        </label>
-                        <input type="text" class="form-control" name='subject' id='subject' placeholder="Subject" required>
-                        <div class='invalid-feedback'>
-                            <% if(spanish){ %>
-                                Ingrese un tema
-                            <% }else{ %>
-                                Enter a subject
-                            <% } %>
-                        </div>
-                    </div>
-                </div>
-                <div class='form-row'>
-                    <div class='col-md-8 mb-3'>
-                        <div class="form-group">
-                            <label for="message">
+                    <hr>
+                    <form action='/contact' id='contact' method='POST'>
+                        <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for='fullName'>
                                 <% if(spanish){ %>
-                                    Mensaje
+                                    Nombre completo
                                 <% }else{ %>
-                                    Message
+                                    Full Name
                                 <% } %>
                             </label>
-                            <textarea class="form-control" name='message' id="message" rows="3" required></textarea>
+                            <input type="text" class="form-control" name ='fullName' id='fullName' placeholder="Full Name" required>
                             <div class='invalid-feedback'>
                                 <% if(spanish){ %>
-                                    Ingrese su mensaje
+                                    Por favor, escriba su nombre
                                 <% }else{ %>
-                                    Enter your message
+                                    Please enter your name
+                                <% } %>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for='email'>
+                                <% if(spanish){ %>
+                                    Dirección de correo electrónico
+                                <% }else{ %>
+                                    Email Address
+                                <% } %>
+                            </label>
+                            <input type="email" class="form-control" name ='email' id='email' placeholder="Email" required>
+                            <div class='invalid-feedback'>
+                                <% if(spanish){ %>
+                                    Por favor proporcione un correo electrónico válido para que podamos contactarlo
+                                <% }else{ %>
+                                    Please provide a valid email so we can contact you
                                 <% } %>
                             </div>
                         </div>
                     </div>
+                        <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for='subject'>
+                                <% if(spanish){ %>
+                                    Tema
+                                <% }else{ %>
+                                    Subject
+                                <% } %>
+                            </label>
+                            <input type="text" class="form-control" name='subject' id='subject' placeholder="Subject" required>
+                            <div class='invalid-feedback'>
+                                <% if(spanish){ %>
+                                    Ingrese un tema
+                                <% }else{ %>
+                                    Enter a subject
+                                <% } %>
+                            </div>
+                        </div>
+                    </div>
+                        <div class='form-row'>
+                        <div class='col-md-8 mb-3'>
+                            <div class="form-group">
+                                <label for="message">
+                                    <% if(spanish){ %>
+                                        Mensaje
+                                    <% }else{ %>
+                                        Message
+                                    <% } %>
+                                </label>
+                                <textarea class="form-control" name='message' id="message" rows="3" required></textarea>
+                                <div class='invalid-feedback'>
+                                    <% if(spanish){ %>
+                                        Ingrese su mensaje
+                                    <% }else{ %>
+                                        Enter your message
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class='form-group submit'>
+                        <button class='btn btn-primary btn-sm' id='btnSubmit' type='submit'>
+                            <% if(spanish){ %>
+                                Enviar
+                            <% }else{ %>
+                                Submit
+                            <% } %>
+                        </button>
+                    </div>
+                    </form>
+                    <script>
+                    $("#btnSubmit").click(function(event) {
+                        // Fetch form to apply custom Bootstrap validation
+                        var form = $("#contact")
+                        if (form[0].checkValidity() === false) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.addClass('was-validated');
+                        // Perform ajax submit here...
+                    });
+                </script>
                 </div>
-                <div class='form-group submit'>
-                    <button class='btn btn-primary btn-sm' id='btnSubmit' type='submit'>
-                        <% if(spanish){ %>
-                            Enviar
-                        <% }else{ %>
-                            Submit
-                        <% } %>
-                    </button>
-                </div>
-            </form>
-            <script>
-                $("#btnSubmit").click(function(event) {
-                    // Fetch form to apply custom Bootstrap validation
-                    var form = $("#contact")
-                    if (form[0].checkValidity() === false) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-                    form.addClass('was-validated');
-                    // Perform ajax submit here...
-                });
-            </script>
+            </div>
         </div>
     </div>
 </div>
-
 <% if(spanish){ %>
     <% include partials/footer-spanish %>
 <% }else{ %>
