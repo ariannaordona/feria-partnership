@@ -1,3 +1,6 @@
+.carousel-caption {
+    top: 2%;
+}
 @media only screen and (max-width: 1920px){
     .conference {height: 6500px;}
 }
@@ -17,13 +20,15 @@
     .conference {height: 6500px;}
 }
 @media only screen and (max-width: 360px) {
-    .conference {height: 5000px;}
+    .conference {height: 5500px;}
+    .carousel-caption {
+    top: 3%;
+}
 }
 @media only screen and (max-width: 320px) {
     .conference {height: 5500px;}
 }
 .conference {
-    background-color:#212749;
     background: 
         /* top, transparent black, faked with gradient */ 
         -webkit-gradient(
@@ -58,8 +63,6 @@
         ),
         /* bottom, image */
         url('/images/graphics/feria-frame.jpg');
-    background-size: cover;
-}
-.carousel-caption {
-    top: 2%;
+    background-repeat: no-repeat;
+    background-color:#212749;
 }

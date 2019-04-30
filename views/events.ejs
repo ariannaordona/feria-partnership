@@ -56,12 +56,18 @@
         <div class='row no-gutters'>
             <div class='item col-12 width events events-past'>
                 <div class='carousel-caption'>
-                    <p class='big'>Past Events</p>
+                    <p class='big'>
+                        <% if(spanish) { %>
+                            Eventos pasados
+                        <% }else{ %>
+                            Past Events
+                        <% } %>
+                    </p>
                     <hr>
                     <ul class='small'>
                         <% if(spanish){ %>
                             <li>
-                                <a href='/events/feria-4-spanish' target='_blank'><span class='event'>4ta. Conferencia Anual Asociación FERIA de San Diego, 2018</span></a>
+                                <a href='/events/feria-4-spanish' ><span class='event'>4ta. Conferencia Anual Asociación FERIA de San Diego, 2018</span></a>
                                 <p>Iluminando el Camino al Exito y al Bienestar</p>
                             </li>
                             <li>
@@ -78,7 +84,7 @@
                             </li>
                         <% }else{ %>
                             <li>
-                                <a href='/events/feria-4' target='_blank'><span class='event'>4th Annual FERIA Partnership Conference, 2018</span></a>
+                                <a href='/events/feria-4' ><span class='event'>4th Annual FERIA Partnership Conference, 2018</span></a>
                                 <p>Lighting the Pathway to Success and Wellness</p>
                             </li>
                             <li>
