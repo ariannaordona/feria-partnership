@@ -11,18 +11,19 @@
     .conference {height: 4500px;}
 }
 @media only screen and (max-width: 768px){
-    .conference {height: 5200px;}
-}
-@media only screen and (max-width: 414px) {
     .conference {height: 6000px;}
 }
+@media only screen and (max-width: 414px) {
+    .conference {height: 6600px;}
+}
 @media only screen and (max-width: 375px) {
-    .conference {height: 6400px;}
+    .conference {height: 6800px;}
 }
 @media only screen and (max-width: 360px) {
+    .conference {height: 7000px;}
 }
 @media only screen and (max-width: 320px) {
-    .conference {height: 5500px;}
+    .conference {height: 5800px;}
     .carousel-caption {top: 3%;}
 }
 .conference {
@@ -119,6 +120,10 @@
 .bar-2 {background-color: #ff9800;}
 .bar-1 {background-color: #f44336;}
 
+.bar-5-key {width: 89%;}
+.bar-4-key {width: 8%;}
+.bar-3-key {width: 3%;}
+
 .bar-5-1 {width: 90%;}
 .bar-4-1 {width: 10%;}
 
@@ -158,6 +163,7 @@
 .bar-5-12 {width: 77%;}
 .bar-4-12 {width: 15%;}
 .bar-3-12 {width: 8%;}
+
 /* Responsive layout - make the columns stack on top of each other instead of next to each other */
 @media (max-width: 400px) {
   .side, .middle {width: 50%;}
@@ -169,4 +175,7 @@
   .bar {
       height:10px;
   }
+}
+.carousel {
+  height:270px;
 }

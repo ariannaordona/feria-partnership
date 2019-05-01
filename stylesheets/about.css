@@ -7,34 +7,34 @@ hr {
     width: 100%;
 }
 @media only screen and (max-width: 1920px){
-    .height-big {height:50rem;}
+    .height-big {height:1000px;}
+    .big, .title {font-size: 2em}
 }
 @media only screen and (max-width: 1824px){
 }
 @media only screen and (max-width: 1224px){
-    .height-big {height:40rem;}
 }
 @media only screen and (max-width: 768px){
-    .big {font-size:1.75em;}
+    .big, .title {font-size:1.75em;}
     .small {font-size:1em;}
-    .height-big {height:30rem;}
+    .height-big {height: 1200px;}
 }
 @media only screen and (max-width: 414px) {
-    .big {font-size:1.5em;}
+    .big, .title {font-size:1.5em;}
     .small {font-size:1em;}
-    .height-big {height:35rem;}
+    .height-big {height: 1200px;}
     .video {padding-top: 150px}
 }
 @media only screen and (max-width: 375px) {
-    .height-big {height:38rem;}
+    .height-big {height: 1200px;}
 }
 @media only screen and (max-width: 360px) {
-    .height-big {height:40rem;}
+    .height-big {height: 1200px;}
 }
 @media only screen and (max-width: 320px) {
-    .big {font-size:1em;}
+    .big, .title {font-size:1em;}
     .small {font-size:.8em;}
-    .height-big {height:500px;}
+    .height-big {height: 900px;}
 }
 .carousel-caption {
     color: #333;
@@ -56,13 +56,8 @@ hr {
     width: 200px;
     height: 200px;
 }
-.titles {
-    list-style: none;
-    font-size: 14px;
-    padding: 0px;
-}
-.bottom {
-    padding-bottom: 100px
+.title {
+    text-align: center;
 }
 .team-img img {
     border-radius:100px;
