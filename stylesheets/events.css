@@ -28,12 +28,12 @@
     .events-past {height: 800px;}
     .collage img { height: 0px;}
 }
-.events {
+.events a {
+    color: #e74c3c;
+}
+.top {
+    padding-top:150px;
     background: #667db6;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.events a {
-    color: #e74c3c;
-}
-.top {padding-top:50px}
