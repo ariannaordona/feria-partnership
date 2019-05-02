@@ -19,12 +19,12 @@ app.use(express.urlencoded({}));
 //====================================
 
 app.get('/', function(req, res){res.redirect('/home');});
-app.get('/home', function(req, res){res.render('home', {spanish:false});});
-app.get('/home-spanish', function(req, res){res.render('home', {spanish:true});});
-app.get('/about', function(req, res){res.render('about', {spanish:false});});
-app.get('/about-spanish', function(req, res) {res.render('about', {spanish:true});});
-app.get('/contact', function(req,res) {res.render('contact', {spanish:false});});
-app.get('/contact-spanish', function(req,res) {res.render('contact', {spanish:true});});
+app.get('/home', function(req, res){res.render('home', {hrefEng:'/home', hrefSpa:'/home-spanish', spanish:false});});
+app.get('/home-spanish', function(req, res){res.render('home', {hrefEng:'/home', hrefSpa:'/home-spanish', spanish:true});});
+app.get('/about', function(req, res){res.render('about', {hrefEng:'/about', hrefSpa:'/about-spanish', spanish:false});});
+app.get('/about-spanish', function(req, res) {res.render('about', {hrefEng:'/about', hrefSpa:'/about-spanish', spanish:true});});
+app.get('/contact', function(req,res) {res.render('contact', {hrefEng:'/contact', hrefSpa:'/contact-spanish', spanish:false});});
+app.get('/contact-spanish', function(req,res) {res.render('contact', {hrefEng:'/contact', hrefSpa:'/contact-spanish', spanish:true});});
 app.post('/contact', function(req,res) {
   const sgMail = require('@sendgrid/mail');
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -37,18 +37,18 @@ app.post('/contact', function(req,res) {
   sgMail.send(msg);
   res.redirect('/about');
 });
-app.get('/events', function(req, res){res.render('events', {spanish:false});});
-app.get('/events-spanish', function(req, res){res.render('events', {spanish:true});});
-app.get('/events/feria-5', function(req, res){res.render('feria-5', {spanish:false})});
-app.get('/events/feria-5-spanish', function(req, res){res.render('feria-5', {spanish:true})});
-app.get('/events/feria-4', function(req, res){res.render('feria-4', {spanish:false})});
-app.get('/events/feria-4-spanish', function(req, res){res.render('feria-4', {spanish:true})});
-app.get('/events/feria-3', function(req, res){res.render('feria-3', {spanish:false})});
-app.get('/events/feria-3-spanish', function(req, res){res.render('feria-3', {spanish:true})});
-app.get('/support-groups', function(req,res){res.render('support-groups', {spanish:false})});
-app.get('/support-groups-spanish', function(req,res){res.render('support-groups', {spanish:true})});
-app.get('/questions-and-concerns', function(req,res){res.render('questions-and-concerns', {spanish:false})});
-app.get('/questions-and-concerns-spanish', function(req,res){res.render('questions-and-concerns', {spanish:true})});
+app.get('/events', function(req, res){res.render('events', {hrefEng:'/events', hrefSpa:'/events-spanish', spanish:false});});
+app.get('/events-spanish', function(req, res){res.render('events', {hrefEng:'/events', hrefSpa:'/events-spanish', spanish:true});});
+app.get('/events/feria-5', function(req, res){res.render('feria-5', {hrefEng:'/events/feria-5', hrefSpa:'/events/feria-5-spanish', spanish:false})});
+app.get('/events/feria-5-spanish', function(req, res){res.render('feria-5', {hrefEng:'/events/feria-5', hrefSpa:'/events/feria-5', spanish:true})});
+app.get('/events/feria-4', function(req, res){res.render('feria-4', {hrefEng:'/events/feria-4', hrefSpa:'/events/feria-4-spanish', spanish:false})});
+app.get('/events/feria-4-spanish', function(req, res){res.render('feria-4', {hrefEng:'/events/feria-4', hrefSpa:'/events/feria-4-spanish', spanish:true})});
+app.get('/events/feria-3', function(req, res){res.render('feria-3', {hrefEng:'/events/feria-3', hrefSpa:'/events/feria-3-spanish', spanish:false})});
+app.get('/events/feria-3-spanish', function(req, res){res.render('feria-3', {hrefEng:'/events/feria-3', hrefSpa:'/events/feria-3-spanish', spanish:true})});
+app.get('/support-groups', function(req,res){res.render('support-groups', {hrefEng:'/support-groups', hrefSpa:'/support-groups-spanish', spanish:false})});
+app.get('/support-groups-spanish', function(req,res){res.render('support-groups', {hrefEng:'/support-groups', hrefSpa:'/support-groups-spanish', spanish:true})});
+app.get('/questions-and-concerns', function(req,res){res.render('questions-and-concerns', {hrefEng:'/questions-and-concerns', hrefSpa:'/questions-and-concerns-spanish', spanish:false})});
+app.get('/questions-and-concerns-spanish', function(req,res){res.render('questions-and-concerns', {hrefEng:'/questions-and-concerns', hrefSpa:'/questions-and-concerns-spanish', spanish:true})});
 
 //====================================
 // IMAGE ROUTES
