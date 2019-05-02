@@ -11,19 +11,19 @@
     .conference {height: 4500px;}
 }
 @media only screen and (max-width: 768px){
-    .conference {height: 6000px;}
+    .conference {height: 9000px;}
 }
 @media only screen and (max-width: 414px) {
-    .conference {height: 6600px;}
+    .conference {height: 7200px;}
 }
 @media only screen and (max-width: 375px) {
-    .conference {height: 6800px;}
+    .conference {height: 7500px;}
 }
 @media only screen and (max-width: 360px) {
-    .conference {height: 7000px;}
+    .conference {height: 7500px;}
 }
 @media only screen and (max-width: 320px) {
-    .conference {height: 5800px;}
+    .conference {height: 6200px;}
     .carousel-caption {top: 3%;}
 }
 .conference {
@@ -62,7 +62,8 @@
         ),
         /* bottom, image */
         url('/images/graphics/mountain-frame.jpg');
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:rgb(10,10,19);
 }
 .keynote {
     height: 10em;
