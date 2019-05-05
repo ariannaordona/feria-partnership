@@ -35,6 +35,13 @@ app.post('/contact', function(req,res) {
     html: req.body.message + '<p><strong>' + req.body.fullName + '</strong></p>',
   };
   sgMail.send(msg);
+  msg = {
+    to: 'feria.partnership@gmail.com',
+    from: req.body.email,
+    subject: req.body.subject,
+    html: req.body.message + '<p><strong>' + req.body.fullName + '</strong></p>',
+  }
+  sgMail.send(msg);
   res.redirect('/about');
 });
 app.get('/events', function(req, res){res.render('events', {hrefEng:'/events', hrefSpa:'/events-spanish', spanish:false});});
@@ -45,8 +52,8 @@ app.get('/events/feria-4', function(req, res){res.render('feria-4', {hrefEng:'/e
 app.get('/events/feria-4-spanish', function(req, res){res.render('feria-4', {hrefEng:'/events/feria-4', hrefSpa:'/events/feria-4-spanish', spanish:true})});
 app.get('/events/feria-3', function(req, res){res.render('feria-3', {hrefEng:'/events/feria-3', hrefSpa:'/events/feria-3-spanish', spanish:false})});
 app.get('/events/feria-3-spanish', function(req, res){res.render('feria-3', {hrefEng:'/events/feria-3', hrefSpa:'/events/feria-3-spanish', spanish:true})});
-app.get('/support-groups', function(req,res){res.render('support-groups', {hrefEng:'/support-groups', hrefSpa:'/support-groups-spanish', spanish:false})});
-app.get('/support-groups-spanish', function(req,res){res.render('support-groups', {hrefEng:'/support-groups', hrefSpa:'/support-groups-spanish', spanish:true})});
+app.get('/agencies-orgs', function(req,res){res.render('agencies-orgs', {hrefEng:'/agencies-orgs', hrefSpa:'/agencies-orgs-spanish', spanish:false})});
+app.get('/agencies-orgs-spanish', function(req,res){res.render('agencies-orgs', {hrefEng:'/agencies-orgs', hrefSpa:'/agencies-orgs-spanish', spanish:true})});
 app.get('/questions-and-concerns', function(req,res){res.render('questions-and-concerns', {hrefEng:'/questions-and-concerns', hrefSpa:'/questions-and-concerns-spanish', spanish:false})});
 app.get('/questions-and-concerns-spanish', function(req,res){res.render('questions-and-concerns', {hrefEng:'/questions-and-concerns', hrefSpa:'/questions-and-concerns-spanish', spanish:true})});
 

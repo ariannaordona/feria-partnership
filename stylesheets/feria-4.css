@@ -115,55 +115,11 @@
     width: 0%;
 }
 /* Individual bars */
-.bar-5 {background-color: #4CAF50;}
-.bar-4 {background-color: #2196F3;}
-.bar-3 {background-color: #00bcd4;}
+.bar-5 {background-color: #4CAF50; width: 89%;}
+.bar-4 {background-color: #2196F3; width: 8%;}
+.bar-3 {background-color: #00bcd4; width: 3%;}
 .bar-2 {background-color: #ff9800;}
 .bar-1 {background-color: #f44336;}
-
-.bar-5-key {width: 89%;}
-.bar-4-key {width: 8%;}
-.bar-3-key {width: 3%;}
-
-.bar-5-1 {width: 90%;}
-.bar-4-1 {width: 10%;}
-
-.bar-5-2 {width: 98%;}
-.bar-4-2 {width: 2%;}
-
-.bar-5-3 {width: 76%;}
-.bar-4-3 {width: 19%;}
-.bar-3-3 {width: 3%;}
-
-.bar-5-4 {width: 75%;}
-.bar-4-4 {width: 12.5%;}
-.bar-3-4 {width: 12.5%;}
-
-.bar-5-5 {width: 83%;}
-.bar-4-5 {width: 17%;}
-
-.bar-5-6 {width: 90%;}
-.bar-4-6 {width: 10%;}
-
-.bar-5-7 {width: 80%;}
-.bar-4-7 {width: 10%;}
-.bar-3-7 {width: 10%;}
-
-.bar-5-8 {width: 93%;}
-.bar-4-8 {width: 7%;}
-
-.bar-5-9 {width: 68%;}
-.bar-4-9 {width: 22%;}
-.bar-3-9 {width: 10%;}
-
-.bar-5-10 {width: 91%;}
-.bar-4-10 {width: 9%;}
-
-.bar-5-11 {width: 100%;}
-
-.bar-5-12 {width: 77%;}
-.bar-4-12 {width: 15%;}
-.bar-3-12 {width: 8%;}
 
 /* Responsive layout - make the columns stack on top of each other instead of next to each other */
 @media (max-width: 400px) {
