@@ -1,0 +1,143 @@
+.carousel-caption {
+    top: 2%;
+}
+@media only screen and (max-width: 1920px){
+    .conference {height: 6800px;}
+}
+@media only screen and (max-width: 1824px){
+    .conference {height: 5800px;}
+}
+@media only screen and (max-width: 1224px){
+    .conference {height: 4800px;}
+}
+@media only screen and (max-width: 768px){
+    .conference {height: 8000px;}
+}
+@media only screen and (max-width: 414px) {
+    .conference {height: 6800px;}
+}
+@media only screen and (max-width: 375px) {
+    .conference {height: 7000px;}
+}
+@media only screen and (max-width: 360px) {
+    .conference {height: 7200px;}
+}
+@media only screen and (max-width: 320px) {
+    .conference {height: 6000px;}
+    .carousel-caption {top: 3%;}
+}
+.conference {
+    background: 
+        /* top, transparent black, faked with gradient */ 
+        -webkit-gradient(
+          linear, 
+          left top, left bottom, 
+          from(rgba(0, 0, 0, 0.3)), 
+          to(rgba(0, 0, 0, 0.3))
+        ),
+        /* bottom, image */
+        url('/images/graphics/mountain-frame.jpg');
+    background: 
+        /* top, transparent black, faked with gradient */ 
+        -webkit-linear-gradient(
+          rgba(0, 0, 0, 0.3), 
+          rgba(0, 0, 0, 0.3)
+        ),
+        /* bottom, image */
+        url('/images/graphics/mountain-frame.jpg');
+    background: 
+        /* top, transparent black, faked with gradient */ 
+        -o-linear-gradient(
+          rgba(0, 0, 0, 0.3), 
+          rgba(0, 0, 0, 0.3)
+        ),
+        /* bottom, image */
+        url('/images/graphics/mountain-frame.jpg');
+    background: 
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.3), 
+          rgba(0, 0, 0, 0.3)
+        ),
+        /* bottom, image */
+        url('/images/graphics/mountain-frame.jpg');
+    background-repeat: no-repeat;
+    background-color:rgb(10,10,19);
+}
+.keynote {
+    height: 10em;
+}
+.keynote-text {
+    text-align: left;
+    font-size:.8em;
+}
+.keynote-text li:before {
+    content: none;
+}
+.keynote-text li {
+    list-style: circle;
+}
+.top {
+    padding-bottom: 10px;
+}
+.card {
+    text-align: left;
+}
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 18%;
+  padding-left: 20px;
+}
+
+.middle {
+  float: left;
+  width: 64%;
+  padding-top: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+.bar {
+    height:18px;
+    width: 0%;
+}
+/* Individual bars */
+.bar-5 {background-color: #4CAF50; width: 96%;}
+.bar-4 {background-color: #2196F3; width: 2%;}
+.bar-3 {background-color: #00bcd4; width: 2%;}
+.bar-2 {background-color: #ff9800;}
+.bar-1 {background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {width: 50%;}
+  
+  /* Hide the right column on small screens */
+  .right {
+    display: none;
+  }
+  .bar {
+      height:10px;
+  }
+}
+.carousel {
+  height:270px;
+}
