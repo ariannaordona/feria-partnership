@@ -54,6 +54,8 @@ app.get('/events/feria-3', function(req, res){res.render('feria-3', {hrefEng:'/e
 app.get('/events/feria-3-spanish', function(req, res){res.render('feria-3', {hrefEng:'/events/feria-3', hrefSpa:'/events/feria-3-spanish', spanish:true})});
 app.get('/events/feria-2', function(req, res){res.render('feria-2', {hrefEng:'/events/feria-2', hrefSpa:'/events/feria-2-spanish', spanish:false})});
 app.get('/events/feria-2-spanish', function(req, res){res.render('feria-2', {hrefEng:'/events/feria-2', hrefSpa:'/events/feria-2-spanish', spanish:true})});
+app.get('/events/feria-1', function(req, res){res.render('feria-1', {hrefEng:'/events/feria-1', hrefSpa:'/events/feria-1-spanish', spanish:false})});
+app.get('/events/feria-1-spanish', function(req, res){res.render('feria-1', {hrefEng:'/events/feria-1', hrefSpa:'/events/feria-1-spanish', spanish:true})});
 app.get('/agencies-orgs', function(req,res){res.render('agencies-orgs', {hrefEng:'/agencies-orgs', hrefSpa:'/agencies-orgs-spanish', spanish:false})});
 app.get('/agencies-orgs-spanish', function(req,res){res.render('agencies-orgs', {hrefEng:'/agencies-orgs', hrefSpa:'/agencies-orgs-spanish', spanish:true})});
 app.get('/questions-and-concerns', function(req,res){res.render('questions-and-concerns', {hrefEng:'/questions-and-concerns', hrefSpa:'/questions-and-concerns-spanish', spanish:false})});
@@ -78,6 +80,7 @@ app.get('/images/team/clarisa-solis.jpg', function(req, res, next){res.sendFile(
 app.get('/images/team/alex-montoya.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/team', 'alex-montoya.jpg'));});
 app.get('/images/team/ben-hueso.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/team', 'ben-hueso.jpg'));});
 app.get('/images/team/diana-pastora-carson.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/team', 'diana-pastora-carson.jpg'));});
+app.get('/images/team/pedro-olvera.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/team', 'pedro-olvera.jpg'));});
 app.get('/images/FERIA-conference/4/img0001.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/FERIA-conference/4/', 'img0001.jpg'));});
 app.get('/images/FERIA-conference/4/img0002.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/FERIA-conference/4/', 'img0002.jpg'));});
 app.get('/images/FERIA-conference/4/img0003.jpg', function(req, res, next){res.sendFile(path.join(__dirname, 'images/FERIA-conference/4/', 'img0003.jpg'));});
